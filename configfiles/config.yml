@@ -1,0 +1,4 @@
+test:
+  base_url_task1: http://telecommunication-site.com/
+  base_url_task2: http://the-internet.herokuapp.com/challenging_dom
+  base_url_task3: https://www.globalsqa.com/demo-site/frames-and-windows/#iFrame
