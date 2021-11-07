@@ -91,6 +91,11 @@ class WebDriverFactory:
         elif system == 'Linux':
             return webdriver.Chrome(executable_path="chromedriver",
                                     options=self.get_chrome_options())
+        elif system == 'Darwin':
+            return webdriver.Chrome(executable_path=os.path.join(
+                self.driver_dir,
+                "Drivers", "chromedriver"),
+                options=self.get_chrome_options())
         else:
             print("unexpected operating system {}".format(system))
             assert False
